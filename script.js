@@ -1,23 +1,18 @@
-// Animação ao rolar a página
-const cards = document.querySelectorAll(".card");
-
-function revealCards() {
-    cards.forEach(card => {
-        const rect = card.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 60) {
-            card.style.opacity = 1;
-            card.style.transform = "translateY(0)";
-        }
-    });
-}
-
-window.addEventListener("scroll", revealCards);
-
-// Estado inicial
-cards.forEach(card => {
-    card.style.opacity = 0;
-    card.style.transform = "translateY(25px)";
-    card.style.transition = "0.5s ease";
+// navbar fixa ao rolar
+window.addEventListener("scroll", () => {
+    const nav = document.querySelector(".navbar");
+    nav.classList.toggle("scrolled", window.scrollY > 20);
 });
 
-console.log("Site carregado!");
+// animação suave nos cards
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".card").forEach(card => {
+    observer.observe(card);
+});
