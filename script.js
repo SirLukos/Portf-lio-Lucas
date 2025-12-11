@@ -1,0 +1,1 @@
+/* Conteúdo completo do script.js fornecido anteriormente */
