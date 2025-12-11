@@ -4,15 +4,11 @@ window.addEventListener("scroll", () => {
     nav.classList.toggle("scrolled", window.scrollY > 20);
 });
 
-// animação suave nos cards
+// animação dos cards
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        }
+        if (entry.isIntersecting) entry.target.classList.add("show");
     });
 });
 
-document.querySelectorAll(".card").forEach(card => {
-    observer.observe(card);
-});
+document.querySelectorAll(".card").forEach(card => observer.observe(card));
