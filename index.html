@@ -3,56 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio – Lucas Granatto</title>
+    <title>Lucas Granatto — Desenvolvedor Web</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ===================== HERO / BANNER ===================== -->
-    <header class="hero">
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar">
+        <h1 class="logo">Lucas<span>Dev</span></h1>
+        <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <header id="home" class="hero">
         <div class="hero-content">
-            <h1>Olá, eu sou <span>Lucas Granatto</span></h1>
-            <p>Estudante de ADS com foco em Desenvolvimento Web</p>
+            <h2>Olá, eu sou</h2>
+            <h1 class="hero-title">Lucas <span>Granatto</span></h1>
+            <p>Estudante de ADS e Desenvolvedor Web em formação.</p>
             <a href="#projetos" class="btn">Ver Projetos</a>
         </div>
+
+        <img class="hero-illustration" src="https://i.ibb.co/hZJb2LH/illustration.png" alt="developer">
     </header>
 
     <!-- ===================== SOBRE ===================== -->
-    <section class="sobre" id="sobre">
+    <section id="sobre" class="sobre">
         <h2>Sobre Mim</h2>
         <p>
-            Sou estudante de Análise e Desenvolvimento de Sistemas e estou iniciando minha trajetória 
-            no desenvolvimento web. Busco sempre aprender tecnologias novas e criar interfaces limpas, 
-            responsivas e funcionais. Este portfólio representa meus primeiros passos no desenvolvimento.
+            Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e por criar interfaces modernas, funcionais e bem estruturadas.
+            Estou focado em desenvolvimento web e sempre buscando aprender novas ferramentas para evoluir como desenvolvedor.
         </p>
     </section>
 
+    <!-- ===================== HABILIDADES ===================== -->
+    <section id="habilidades" class="habilidades">
+        <h2>Habilidades</h2>
+
+        <div class="skills-grid">
+            <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"><p>HTML</p></div>
+            <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"><p>CSS</p></div>
+            <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"><p>JavaScript</p></div>
+            <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"><p>Git</p></div>
+            <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"><p>GitHub</p></div>
+        </div>
+    </section>
+
     <!-- ===================== PROJETOS ===================== -->
-    <section class="projetos" id="projetos">
+    <section id="projetos" class="projetos">
         <h2>Projetos</h2>
 
         <div class="grid">
             <div class="card">
                 <h3>Portfólio Moderno</h3>
-                <p>Site criado com HTML, CSS e JS, mostrando meus primeiros passos como desenvolvedor.</p>
+                <p>Um site profissional desenvolvido com HTML, CSS e JS, focado em design moderno.</p>
                 <a href="#" class="btn-card">Ver Projeto</a>
             </div>
 
             <div class="card">
                 <h3>To-Do List</h3>
-                <p>Um gerenciador de tarefas simples para praticar manipulação de DOM e JavaScript.</p>
-                <a href="#" class="btn-card">Em desenvolvimento</a>
+                <p>Aplicação de lista de tarefas utilizando JavaScript e manipulação do DOM.</p>
+                <a href="#" class="btn-card">Em Desenvolvimento</a>
             </div>
 
             <div class="card">
                 <h3>Projeto Futuro</h3>
-                <p>Espaço reservado para novos projetos conforme minha evolução.</p>
-                <a href="#" class="btn-card disabled">Em breve</a>
+                <p>Espaço reservado para meus próximos projetos.</p>
+                <a class="btn-card disabled">Em Breve</a>
             </div>
         </div>
     </section>
 
-    <!-- ===================== RODAPÉ ===================== -->
+    <!-- ===================== CONTATO ===================== -->
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+
+        <div class="contato-grid">
+            <a href="mailto:seuemail@gmail.com" class="contact-btn">Email</a>
+            <a href="https://github.com/SirLukos" target="_blank" class="contact-btn">GitHub</a>
+            <a href="https://www.linkedin.com" target="_blank" class="contact-btn">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
     <footer class="footer">
         <p>© 2025 • Desenvolvido por Lucas Granatto</p>
     </footer>
