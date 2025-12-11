@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio – Lucas Granatto</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Lucas Granatto</h1>
-        <p>Estudante de Análise e Desenvolvimento de Sistemas | Foco em Desenvolvimento Web</p>
+
+    <!-- ===================== HERO / BANNER ===================== -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Olá, eu sou <span>Lucas Granatto</span></h1>
+            <p>Estudante de ADS com foco em Desenvolvimento Web</p>
+            <a href="#projetos" class="btn">Ver Projetos</a>
+        </div>
     </header>
 
-    <section class="about">
+    <!-- ===================== SOBRE ===================== -->
+    <section class="sobre" id="sobre">
         <h2>Sobre Mim</h2>
         <p>
-            Olá! Sou estudante de Análise e Desenvolvimento de Sistemas e estou iniciando minha jornada no desenvolvimento web.
-            Tenho interesse em criar interfaces funcionais, organizadas e intuitivas — e este portfólio é um dos meus primeiros projetos.
+            Sou estudante de Análise e Desenvolvimento de Sistemas e estou iniciando minha trajetória 
+            no desenvolvimento web. Busco sempre aprender tecnologias novas e criar interfaces limpas, 
+            responsivas e funcionais. Este portfólio representa meus primeiros passos no desenvolvimento.
         </p>
     </section>
 
-    <section class="projects">
+    <!-- ===================== PROJETOS ===================== -->
+    <section class="projetos" id="projetos">
         <h2>Projetos</h2>
 
-        <div class="project-card">
-            <h3>Portfólio Pessoal</h3>
-            <p>Este site que você está vendo é um dos meus primeiros projetos. Ele foi criado com HTML, CSS e JavaScript.</p>
-        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>Portfólio Moderno</h3>
+                <p>Site criado com HTML, CSS e JS, mostrando meus primeiros passos como desenvolvedor.</p>
+                <a href="#" class="btn-card">Ver Projeto</a>
+            </div>
 
-        <div class="project-card">
-            <h3>To-Do List (em desenvolvimento)</h3>
-            <p>Um gerenciador de tarefas simples, criado para praticar manipulação de DOM e conceitos básicos de JavaScript.</p>
-        </div>
+            <div class="card">
+                <h3>To-Do List</h3>
+                <p>Um gerenciador de tarefas simples para praticar manipulação de DOM e JavaScript.</p>
+                <a href="#" class="btn-card">Em desenvolvimento</a>
+            </div>
 
+            <div class="card">
+                <h3>Projeto Futuro</h3>
+                <p>Espaço reservado para novos projetos conforme minha evolução.</p>
+                <a href="#" class="btn-card disabled">Em breve</a>
+            </div>
+        </div>
     </section>
 
+    <!-- ===================== RODAPÉ ===================== -->
     <footer class="footer">
-        <p>© 2025 – Desenvolvido por Lucas Granatto</p>
+        <p>© 2025 • Desenvolvido por Lucas Granatto</p>
     </footer>
 
     <script src="script.js"></script>
