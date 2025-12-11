@@ -1,10 +1,10 @@
-// navbar fixa ao rolar
+// Muda navbar ao rolar
 window.addEventListener("scroll", () => {
     const nav = document.querySelector(".navbar");
     nav.classList.toggle("scrolled", window.scrollY > 20);
 });
 
-// animação dos cards
+// Animação dos cards de projetos
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add("show");
